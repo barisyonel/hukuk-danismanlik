@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Slab:wght@400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 
 html {
   scroll-behavior: smooth;
@@ -50,7 +53,7 @@ button {
 .navbar-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #6366f1; /* Tailwind'deki indigo-500 */
+  color: #6366f1; 
   transition: color 0.3s ease;
 }
 
@@ -120,7 +123,7 @@ button {
 }
 /* Hizmetler bölümüne özel tasarım */
 #services {
-  background-image: url("/src/assets/images/terazi-background.png");
+  background-image: url("/hukuk-danismanlik/src/assets/images/terazi-background.png");
   background-size: cover;
   background-position: center;
   padding: 4rem 1rem;
@@ -171,6 +174,14 @@ button {
 }
 
 @media (max-width: 768px) {
+  .services-section {
+    grid-template-columns: 1fr; /* Mobilde tek sütun */
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
   .services-section {
     grid-template-columns: 1fr; /* Mobilde tek sütun */
   }
