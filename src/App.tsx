@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton"; 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import "./index.css";
+import "./css.css";
 
 const App = () => {
   const [scrollProgress, setScrollProgress] = useState(0);
