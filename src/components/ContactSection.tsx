@@ -29,9 +29,9 @@ const ContactSection: React.FC = () => {
     })
       .then(() => {
         alert("Mesajınız başarıyla gönderildi!");
-        setSubmitted(true); // Teşekkür mesajını göster
-        setFormData({ name: "", email: "", message: "" }); // Formu sıfırla
-        setTimeout(() => setSubmitted(false), 5000); // 5 saniye sonra teşekkür mesajını kaldır
+        setSubmitted(true); 
+        setFormData({ name: "", email: "", message: "" });
+        setTimeout(() => setSubmitted(false), 5000)
       })
       .catch(() => alert("Mesaj gönderilirken bir hata oluştu."));
   };

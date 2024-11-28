@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules"; // ÖNEMLİ
+import { Navigation, Pagination, Autoplay } from "swiper/modules"; 
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -11,7 +11,7 @@ const SliderSection = () => {
   return (
     <section className="slider-container py-10">
       <Swiper
-        modules={[Navigation, Pagination, Autoplay]} // Modüller düzgünce dahil ediliyor
+        modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={30}
         slidesPerView={1}
         navigation
@@ -24,7 +24,7 @@ const SliderSection = () => {
           <img
             src="/src/assets/images/slider1.jpg"
             alt="Adalet Terazisi"
-            className="w-full h-[400px] object-cover" // Görsellerin yüksekliği ve genişliği eşit
+            className="w-full h-[400px] object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>

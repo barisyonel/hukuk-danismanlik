@@ -58,16 +58,16 @@ button {
 }
 
 .navbar-title:hover {
-  color: #a5b4fc; /* Tailwind'deki indigo-300 */
+  color: #a5b4fc; 
 }
 
 .navbar-subtitle {
   font-size: 0.875rem;
-  color: #d1d5db; /* Tailwind'deki gray-300 */
+  color: #d1d5db; 
 }
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Slab:wght@400&display=swap');
 
-/* Sol kayma animasyonu */
+
 @keyframes slide-in-left {
   from {
     transform: translateX(-100%);

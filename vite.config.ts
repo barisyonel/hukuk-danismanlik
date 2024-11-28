@@ -1,14 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
 export default defineConfig({
+  base: "/hukuk-danismanlik/",
   plugins: [react()],
-  base: '/hukuk-danismanlik/',
-  build: {
-    rollupOptions: {
-      external: [
-        '/hukuk-danismanlik/src/main.tsx', // Rollup'un hata aldığı yolu buraya ekliyoruz
-      ],
-    },
-  },
+  publicDir: "src/public", 
 });
