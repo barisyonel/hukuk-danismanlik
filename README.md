@@ -1,51 +1,43 @@
-# React + TypeScript + Vite
+# Barış Can Yönel Hukuk ve Danışmanlık Web Sitesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, Barış Can Yönel Hukuk ve Danışmanlık Bürosu için modern bir web sitesi olarak geliştirilmiştir. Amacı, kullanıcılarla etkili iletişim kurmak ve hukuk bürosunun profesyonel kimliğini dijital ortamda yansıtmaktır.
 
-Currently, two official plugins are available:
+## 🎯 Özellikler
+- **Responsive Tasarım**: Tüm cihazlarda uyumlu görüntüleme.
+- **Dinamik Animasyonlar**: Kaydırma sırasında etkileyici geçiş efektleri.
+- **İletişim Formu**: Kullanıcıların kolayca mesaj gönderebilmesi.
+- **WhatsApp Entegrasyonu**: Tek tıkla doğrudan iletişim.
+- **Slider Bölümü**: Hukuk temalı görsellerle modern bir giriş.
+- **Scroll Göstergesi**: Kullanıcıların sayfadaki ilerleme durumunu görmesi.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Kullanılan Teknolojiler
+- **React.js**: Modern kullanıcı arayüzü geliştirme.
+- **TypeScript**: Daha güvenli ve ölçeklenebilir kod yazımı.
+- **Tailwind CSS**: Hızlı ve özelleştirilebilir tasarım.
+- **AOS (Animate on Scroll)**: Kaydırma sırasında animasyon efektleri.
+- **Formspree.io**: E-posta entegrasyonu için güvenilir form altyapısı.
+- **Swiper.js**: Slider bileşeni için güçlü bir araç.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
-# Hukuk-ve-Dan-manl-k-Web-Sitesi
+## 📂 Proje Yapısı
+```plaintext
+src/
+├── components/
+│   ├── Navbar.tsx
+│   ├── HeroSection.tsx
+│   ├── ServicesSection.tsx
+│   ├── ContactSection.tsx
+│   ├── SliderSection.tsx
+│   └── Footer.tsx
+├── assets/
+│   ├── images/
+│   │   ├── slider1.jpg
+│   │   ├── slider2.jpg
+│   │   └── slider3.jpg
+│   └── logo.png
+├── styles/
+│   └── index.css
+└── App.tsx
